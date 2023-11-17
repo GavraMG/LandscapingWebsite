@@ -9,7 +9,7 @@
 
 body {
     min-height: 100vh;
-    background-color: #a3b18a;
+    background-color: #FFFFFF;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -64,15 +64,90 @@ header nav ul li a.active {
     background: #FFFFFF;
 }
 
-@media only screen and (max-width: 1200px) {
-    header {
-        padding: 0 30px;
+.hero-image {
+    height: calc(100vh - 60px); 
+    overflow: hidden; 
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+}
+
+.text-overlay {
+position: absolute;
+top: 30%; 
+left: 75%;
+transform: translateX(-50%);
+width: 80%; 
+max-width: 600px; 
+background: rgba(106, 153, 78, 0.90); 
+color: white; 
+padding: 60px;
+box-sizing: border-box;
+border-radius: 40px;
+}
+
+.text-overlay h2 {
+margin-bottom: 30px; 
+font-size: 20px;
+font-weight: 500;
+}
+
+.text-overlay p {
+margin-bottom: 30px; 
+font-size: 36px;
+font-weight: 400;
+}
+
+@media (max-width: 768px) {
+.hero-image {
+  height: 50vh; 
+}
+
+.hero-image img {
+  object-fit: contain; 
+  object-position: center center; 
+}
+}
+
+@media (max-width: 1100px) {
+
+    .text-overlay {
+        top: 20%; 
+        left: 80%;
+        transform: translateX(-70%);
+        width: 50%; 
+        padding: 40px; 
+        border-radius: 20px;
+    }
+
+    .text-overlay h2 {
+        margin-bottom: 30px; 
+        font-size: 14px;
+        font-weight: 500;
+    }
+  
+    .text-overlay p {
+        margin-bottom: 30px;
+        font-size: 24px;
+        font-weight: 400;
     }
 }
 
-@media only screen and (max-width: 1100px) {
+@media (max-width: 500px) {
+
+    .text-overlay {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    
     .hamburger {
         display: block;
+        z-index: 3;
     }
 
     header nav {
@@ -84,6 +159,7 @@ header nav ul li a.active {
         background: #6A994E;
         padding: 30px;
         transition: 0.3s;
+        z-index: 3;
     }
 
     header #nav_check:checked ~ nav {
@@ -97,87 +173,140 @@ header nav ul li a.active {
     header nav ul li a {
         margin: 5px 0;
     }
-}
 
-.hero-image {
-        height: calc(100vh - 60px); 
-        overflow: hidden; 
-}
-  
-.hero-image img {
-        width: 100%;
-        height: auto;
-        object-fit: cover; 
-}
-
-.text-overlay {
-    position: absolute;
-    top: 30%; 
-    left: 75%;
-    transform: translateX(-50%);
-    width: 80%; 
-    max-width: 600px; 
-    background: rgba(106, 153, 78, 0.90); 
-    color: white; 
-    padding: 60px;
-    box-sizing: border-box;
-}
-  
-.text-overlay h2 {
-    margin-bottom: 30px; /* Adjust spacing as necessary */
-    font-size: 20px;
-    font-weight: 500;
-}
-  
-.text-overlay p {
-    margin-bottom: 30px; /* Adjust spacing as necessary */
-    font-size: 36px;
-    font-weight: 400;
-}
-  
-@media (max-width: 768px) {
-    .hero-image {
-      height: 50vh; /* Adjust the height as needed for smaller screens */
-    }
-  
-    .hero-image img {
-      object-fit: contain; /* Use 'contain' to make sure the entire image fits within the container */
-      object-position: center center; /* Keeps the image centered both vertically and horizontally */
-    }
-}
-
-@media (max-width: 1100px) {
-    
     .text-overlay {
-      top: 20%; /* or adjust as necessary for smaller screens */
-      left: 80%;
-      transform: translateX(-70%);
-      width: 50%; /* you might want a smaller width for smaller screens */
-      padding: 40px; /* or adjust as necessary */
-      /* Adjust font sizes if necessary */
+        z-index: 1;
     }
 
-    .text-overlay h2 {
-        margin-bottom: 30px; /* Adjust spacing as necessary */
-        font-size: 14px;
-        font-weight: 500;
-    }
-      
-    .text-overlay p {
-        margin-bottom: 30px; /* Adjust spacing as necessary */
-        font-size: 24px;
-        font-weight: 400;
-    }
+}
+
+/*---------- About Us ----------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------- Card ----------*/
+
+h1 {
+    font-size: 48px;
+    color: #0E4720;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    padding: 40px;
+    grid-gap: 50px;
+}
+
+.card {
+    background-color: #fff3f3;
+    border-radius: 20px;
+}
+
+.container {
+    position: relative;
+    clip-path:polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    flex-basis: 31%;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.container img {
+    width: 100%;
+    display: block;
+    border-radius: 20px 20px 0 0;
+}
+
+.details {
+    padding: 20px 10px;
+}
+
+.details h3 {
+    color: #000;
+    font-weight: 700;
+    font-size: 26px;
+    margin: 10px 0 15px 0;
+}
+
+.details p {
+    color: #000;
+    font-weight: 400px;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.card:hover {
+    box-shadow: 0 0 20px 0px rgb(0,0,0,0.2);
 }
 
 @media (max-width: 500px) {
-    
-    .text-overlay {
-        display: none;
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr; 
+        padding: 0px; 
+        place-items: center; 
+    }
+
+    .card {
+        width: calc(100% 0px); 
+        margin: 0 auto; 
+        box-sizing: border-box; 
+    }
+
+    .services {
+        width: 100%; 
+        padding: 20px; 
     }
 }
 
+.services {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
 
+.details p {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 10px;
+}
 
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
 
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
 
