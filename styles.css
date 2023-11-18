@@ -186,7 +186,7 @@ font-weight: 400;
 
 }
 
-/*---------- About Us ----------*/
+/*---------- Greet ----------*/
 
 .textrow {
     max-width: 2000px;
@@ -194,7 +194,7 @@ font-weight: 400;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px;
     overflow: hidden;
-    padding: 120px 120px;
+    padding: 100px 100px;
     padding-bottom: 20px;
 }
 
@@ -274,17 +274,18 @@ font-weight: 400;
     }
 }
 
-/*---------- Card ----------*/
+/*---------- Services ----------*/
 
 h1 {
     font-size: 48px;
     color: #0E4720;
-    padding-bottom: 50px;
+    padding-bottom: 0px;
+    padding-top: 20px;
 }
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    padding: 40px;
+    padding: 50px;
     grid-gap: 50px;
 }
 
@@ -345,7 +346,7 @@ h1 {
 
     .services {
         width: 100%; 
-        padding: 20px; 
+        padding: 50px; 
     }
 }
 
@@ -353,7 +354,7 @@ h1 {
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 20px;
 }
 
 .details p {
@@ -374,4 +375,100 @@ h1 {
 .reveal.active {
     transform: translateY(0px);
     opacity: 1;
+}
+
+/*---------- About Us ----------*/
+
+h1 {
+    font-size: 48px;
+    color: #0E4720;
+    padding-bottom: 0px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.aboutus {
+    max-width: 2000px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    overflow: hidden;
+    padding: 80px 120px;
+    padding-bottom: 50px;
+}
+
+.aboutus .aboutimgWrapper {
+    overflow: hidden;
+    width: 900px;
+    border-radius: 20px;
+}
+
+.aboutus .aboutimgWrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.aboutus .aboutimgWrapper:hover img {
+    transform: scale(1.25);
+}
+
+.aboutus .aboutcontentWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 80px; 
+}
+
+.content h4 {
+    color: rgba(150, 187, 30, 0.69);;
+}
+
+.content h2 {
+    color: #0E4720;
+}
+
+.content p {
+    color: #676767;
+}
+
+@media(max-width: 1500px) {
+    .aboutus {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+        padding: 50px 30px;
+    }
+
+    .aboutus .aboutimgWrapper {
+        overflow: hidden;
+        width: 700px;
+        border-radius: 20px;
+       
+    }
+}
+
+@media(max-width: 500px) {
+    .aboutus {
+        grid-template-columns: 1fr;
+        grid-gap: 40px;
+        padding-top: 0px;
+        padding: 15px 15px;
+    }
+
+    .aboutus .aboutimgWrapper {
+        overflow: hidden;
+        width: 400px;
+        border-radius: 20px; 
+        height: 400px;
+    }
+
+    .aboutus .aboutcontentWrapper {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 50px;
+    }
 }
