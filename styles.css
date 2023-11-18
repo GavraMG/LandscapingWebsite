@@ -101,7 +101,7 @@ font-size: 36px;
 font-weight: 400;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
     .hero-image {
         height: 50vh; 
     }
@@ -245,6 +245,21 @@ font-weight: 400;
     .textrow .imgWrapper {
         overflow: hidden;
         width: 700px;
+        border-radius: 20px;
+       
+    }
+}
+
+@media(max-width: 1100px) {
+    .textrow {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        padding: 0px 40px 0px;
+    }
+
+    .textrow .imgWrapper {
+        overflow: hidden;
+        width: 500px;
         border-radius: 20px;
        
     }
@@ -444,6 +459,21 @@ h1 {
     .aboutus .aboutimgWrapper {
         overflow: hidden;
         width: 700px;
+        border-radius: 20px;
+       
+    }
+}
+
+@media(max-width: 1100px) {
+    .aboutus {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        padding: 10px 40px;
+    }
+
+    .aboutus .aboutimgWrapper {
+        overflow: hidden;
+        width: 500px;
         border-radius: 20px;
        
     }
