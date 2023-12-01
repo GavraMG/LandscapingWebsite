@@ -38,6 +38,13 @@
                 <div></div>
                 <div></div>
             </label>
+
+            <script type="text/JavaScript">
+                window.addEventListener("scroll", function() {
+                    var header = document.querySelector("header");
+                    header.classList.toggle("sticky", window.scrollY > 0);
+                })
+            </script>
         </header>
 
         <div class="hero-image">
