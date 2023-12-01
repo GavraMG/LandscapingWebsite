@@ -20,16 +20,16 @@
 
         <!--------------------------------------------- Header --------------------------------------------->
 
-        <header>
+        <header id="header">
             <div class="logo">LT Lawn Care</div>
             <input type="checkbox" id="nav_check" hidden>
             <nav>
                 <ul>
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Photo Gallery</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#header" class="active">Home</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#About Us">About Us</a></li>
+                    <li><a href="#Photo Gallery">Photo Gallery</a></li>
+                    <li><a href="#Contact Us">Contact Us</a></li>
                 </ul>
             </nav>
             
@@ -72,7 +72,7 @@
 
         <!--------------------------------------------- Service --------------------------------------------->
 
-        <section class="services reveal">
+        <section class="services reveal" id="Services">
             <h1>Services We Offer</h1>
         
             <div class="cards">
@@ -82,7 +82,7 @@
                 </div>
                 <div class="details">
                     <h3>Leaf Removal</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi fuga quasi qui consequuntur, veritatis porro tempora? Illo adipisci sed, eaque quia iste quibusdam laboriosam facilis vitae soluta assumenda nobis vero?</p>
+                    <p>Enjoy a tidy yard with our efficient Leaf Removal service. Our team swiftly clears away leaves and debris, ensuring your outdoor space is neat and presentable in any season.</p>
                 </div>
             </div>
     
@@ -92,7 +92,7 @@
                 </div>
                 <div class="details">
                     <h3>Lawn Care</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi fuga quasi qui consequuntur, veritatis porro tempora? Illo adipisci sed, eaque quia iste quibusdam laboriosam facilis vitae soluta assumenda nobis vero?</p>
+                    <p>Our expert Lawn Care keeps your grass healthy and lush. Regular mowing, edging, and fertilization tailored to your lawn's specific needs for a perfect green space.</p>
                 </div>
             </div>
     
@@ -102,7 +102,7 @@
                 </div>
                 <div class="details">
                     <h3>Landscaping</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi fuga quasi qui consequuntur, veritatis porro tempora? Illo adipisci sed, eaque quia iste quibusdam laboriosam facilis vitae soluta assumenda nobis vero?</p>
+                    <p>Elevate your outdoor area with our bespoke Landscaping services. We design, plant, and maintain beautiful garden spaces that enhance your home's natural charm.</p>
                 </div>
             </div>
             <div class="card card4 reveal">
@@ -111,7 +111,7 @@
                 </div>
                 <div class="details">
                     <h3>Soil Laying</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi fuga quasi qui consequuntur, veritatis porro tempora? Illo adipisci sed, eaque quia iste quibusdam laboriosam facilis vitae soluta assumenda nobis vero?</p>
+                    <p>Our Soil Laying service provides nutrient-rich foundations for gardens. Expert soil preparation supports plant growth for a vibrant, healthy garden.</p>
                 </div>
             </div>
     
@@ -121,7 +121,7 @@
                 </div>
                 <div class="details">
                     <h3>Pressure Washing</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi fuga quasi qui consequuntur, veritatis porro tempora? Illo adipisci sed, eaque quia iste quibusdam laboriosam facilis vitae soluta assumenda nobis vero?</p>
+                    <p>Revitalize your property with our Pressure Washing service. We remove dirt and stains from outdoor surfaces, improving appearance and longevity.</p>
                 </div>
             </div>
     
@@ -131,7 +131,7 @@
                 </div>
                 <div class="details">
                     <h3>Window cleaning</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi fuga quasi qui consequuntur, veritatis porro tempora? Illo adipisci sed, eaque quia iste quibusdam laboriosam facilis vitae soluta assumenda nobis vero?</p>
+                    <p>Brighten your home with our professional Window Cleaning service. Streak-free results and meticulous cleaning give you a clearer, more beautiful view.</p>
                 </div>
             </div>
         </div> 
@@ -159,7 +159,7 @@
 
         <!--------------------------------------------- About Us --------------------------------------------->
 
-        <section class="about reveal">
+        <section class="about reveal" id="About Us">
             <h1>About Us</h1>
             
             <div class="aboutus">
@@ -187,7 +187,7 @@
 
         <!--------------------------------------------- Photo Gallery ----------------------------------------->
 
-        <section class="photogallery reveal">
+        <section class="photogallery reveal" id="Photo Gallery">
             <h1>Photo Gallery</h1>
 
             <div class="photobody">
@@ -221,7 +221,7 @@
 
         <!--------------------------------------------- Contact Us ----------------------------------------->
 
-        <section>
+        <section class="reveal" id="Contact Us">
             <div class="color">
                 <div class="contactUs">
                     <h1>Contact Us</h1>
@@ -307,7 +307,28 @@
 
         <!--------------------------------------------- Footer -------------------------------------------->
 
-        
-
+        <section>
+            <footer>
+                <div class="footerContainer">
+                    <div class="socialIcons">
+                        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                    </div>
+                    <div class="footerNav">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Services</a></li>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Gallery</a></li>
+                            <li><a href="">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footerBottom">
+                    <p>Copyright &copy;2023; Designed by <a href="https://github.com/Mgavra1959">Markus Gavra</a></p>
+                </div>
+            </footer>
+        </section>
     </body>
 </html>       
