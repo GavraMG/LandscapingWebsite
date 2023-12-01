@@ -295,7 +295,7 @@ h1 {
     font-size: 65px;
     color: #0E4720;
     padding-bottom: 0px;
-    padding-top: 75px;
+    padding-top: 150px;
     text-align: center;
 }
 
@@ -403,6 +403,10 @@ h1 {
 
 /*---------- About Us ----------*/
 
+.about h1 {
+    padding-top: 200px;
+}
+
 .aboutus {
     max-width: 2000px;
     display: grid;
@@ -507,7 +511,7 @@ h1 {
 
 .photogallery h1 {
     color: #0E4720;
-    padding-top: 75px;
+    padding-top: 200px;
 }
 
 .photobody {
@@ -515,7 +519,7 @@ h1 {
     align-items: center;
     justify-content: center;
     padding-top: 75px;
-    padding-bottom: 50px;
+    padding-bottom: 110px;
 }
 
 .photoContainer {
@@ -643,12 +647,11 @@ h1 {
 /*---------- Contact Us----------*/
 
 .color {
-    background-image: url(Website_Images/leaf.jpg);
+    background-image: url(Website_Images/lawn3.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-
 }
 .contactUs {
     position: relative;
@@ -658,6 +661,7 @@ h1 {
 
 .contactUs h1 {
     color: #FFFFFF;
+    padding-bottom: 90px;
 }
 
 .contactUs .title {
@@ -835,6 +839,13 @@ h1 {
     border-radius: 40px;
 }
 
+@media (max-width: 1400px) {
+
+    .sci li a {
+        color: #FFFFFF
+    }
+}
+
 @media (max-width: 1000px) {
 
     .contactUs {
@@ -869,5 +880,94 @@ h1 {
     .map {
         min-height: 300px;
         padding: 0;
+    }
+}
+
+/*---------- Footer ----------*/
+
+footer {
+    background-color: #6A994E
+}
+
+.footerContainer {
+    width: 100%;
+    padding: 70px 30px 20px
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons li a {
+    color: #FFFFFF;
+    margin: 10px;
+    font-size: 40px;
+}
+
+.footerNav {
+    margin: 30px 0;
+}
+
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+}
+
+.footerNav ul li a {
+    color: #FFFFFF;
+    margin: 20px;
+    font-size: 20px;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.footerNav ul li a:hover {
+    opacity: 1;
+}
+
+.footerBottom {
+    background-color: #5e8846;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.footerBottom p {
+    color: #FFFFFF;
+}
+
+.footerBottom a {
+    color: #FFFFFF;
+    opacity: 0.5;
+    transition: 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin: 0px 5px;
+}
+
+.footerBottom a:hover {
+    opacity: 1;
+}
+
+@media (max-width: 1000px) {
+
+    .footerNav ul {
+        flex-direction: column;
+    }
+
+    .footerNav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .footerNav ul li a {
+        opacity: 1;
+    }
+
+    .footerBottom a {
+        opacity: 1;
     }
 }
