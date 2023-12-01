@@ -25,13 +25,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 40px 100px;
+    padding: 0 30px;
     transition: 0.8s;
 }
 
 header.sticky {
-    padding: 5px 100px;
-    background-color: #0E4720;
+    padding: 0 30px;
+    background-color: #6A994E;
 }
 
 header .logo {
