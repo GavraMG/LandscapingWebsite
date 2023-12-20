@@ -37,7 +37,7 @@ Explore the site at [LTLawnCare.ca](https://gavramg.github.io/Landscaping_Websit
 
 ## 💻 Tech Used
 
-My game used: 
+This Website uses: 
 
 - **HTML5:** The backbone of the website's structure, ensuring content is organized and semantic.
 - **CSS3:** For styling and animation effects, bringing life to the brand's vision.
