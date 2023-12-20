@@ -15,6 +15,11 @@
 
 <br/>
 
+## 🔍 Check It Out
+Explore the site at [LTLawnCare.ca](https://gavramg.github.io/Landscaping_Website/).
+
+<br/>
+
 ## About My Website
  For a friend's burgeoning landscaping business, I designed and developed the LT Lawn Care website, a digital storefront that embodies the green thumb and commitment to quality that the business stands for. Utilizing my skills in JavaScript, CSS, and HTML, I crafted a responsive website that adapts gracefully to any device, ensuring that potential customers experience the same level of care and attention online as they would in their own yards.
 
