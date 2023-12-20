@@ -7,7 +7,7 @@
 </p>
 
 ## 📖 Table of Contents
-
+- [Check It Out](#-check-it-out)
 - [About My Website](#-about-my-website)
   - [Features](#-features)
   - [Tech Used](#-tech-used)
