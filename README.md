@@ -42,6 +42,7 @@ This Website uses:
 - **HTML5:** The backbone of the website's structure, ensuring content is organized and semantic.
 - **CSS3:** For styling and animation effects, bringing life to the brand's vision.
 - **JavaScript:** To create dynamic content and enhance user interactions, making the site responsive and interactive.
+- **Figma:** To help create a design prototype of the website to help figure out UI features and exe
 
 <br/>
 
