@@ -46,7 +46,7 @@ This Website uses:
 
 <br/>
 
-## Contact
+## ✉️ Contact
 
 Got any question? feel free to reach out!
 
